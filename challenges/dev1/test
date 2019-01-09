@@ -1,0 +1,14 @@
+FILES = $(shell  find pictures -type f -iname "*.jpg" | sed 's/pictures/thumbs/g')
+CONVERT_CMD = convert -thumbnail 100 $< $@
+MSG = @echo "\nUpdating thumbsnail" $@
+ 
+all: ${FILES}
+thumbs/%.jpg: pictures/%.jpg
+	$(MSG)
+	$(CONVERT_CMD)
+thumbs/%.JPG: pictures/%.JPG
+	$(MSG)
+	$(CONVERT_CMD)
+clean:
+	@echo Cleaning up files..
+	rm -rf thumbs/*.jpg thumbs/*.JPG

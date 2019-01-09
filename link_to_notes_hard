@@ -1,0 +1,10 @@
+count how many packages installed :
+cd /var/log
+
+cat dpkg.log | grep -i "install " | awk '{print $1}'  |uniq -c   
+
+# you can use "zcat" with "dpkg.log.*" when you're dealing with zipped logs
+
+
+
+while read a && read b <&3; do echo $a $b; done < eps 3<subs  
