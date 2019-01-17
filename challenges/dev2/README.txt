@@ -1,7 +1,7 @@
       -----------====== CHALLENGE ======-----------
       
 The goal of this assignment is to add one command to gdb named "fpointers"
-that locates pointers in a given area of memory. The command (that has
+that locates pointers in a given area of memorcleary. The command (that has
 to be written in python) should take two parameters, the first representing 
 the address of the memory region and the second its size.
 The output (see the example below for more info) has to report
