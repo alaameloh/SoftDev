@@ -1,6 +1,6 @@
 /*
 **.ini
-**.vscode
+**/.vscode/
 !/challenges/
 !/README.md
 !/.gitignore
